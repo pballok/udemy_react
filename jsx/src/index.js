@@ -2,7 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 const App = function() {
-  return <div>Hi there!</div>;
+  const buttonText = 'Click Me';
+
+  return (
+    <div>
+      <label className="lobel" htmlFor="name">Enter name:</label>
+      <input id="name" type="text"/>
+      <button style={{ backgroundColor: 'blue', color: 'white' }}>{buttonText}</button>
+    </div>
+  )
 };
 
 ReactDOM.render(
